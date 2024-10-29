@@ -1,0 +1,25 @@
+name: Deploy obo-kafka-manager to prod
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "obo-kafka-manager/prod/*.yaml"
+
+jobs:
+  deploy-prod:
+    name: Deploy obo-kafka-manager to prod
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Deploy application
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: prod-gcp
+          RESOURCE: ./obo-kafka-manager/prod/nais.yaml
+          PRINT_PAYLOAD: true
