@@ -307,6 +307,12 @@ spec:
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
               "valueDeserializerType": "STRING"
+            },
+            {
+              "name": "pdl.aktor-v2",
+              "location": "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
             }
           ]
         }
