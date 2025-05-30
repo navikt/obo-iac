@@ -39,6 +39,11 @@ spec:
           - id: 17affa79-5227-4209-89c6-34abb5cc7cc9 # nais-team-obo
   kafka:
     pool: nav-dev
+  observability:
+    logging:
+      destinations:
+        - id: elastic
+        - id: loki
   env:
     - name: APP_CONFIG_JSON
       value: >
