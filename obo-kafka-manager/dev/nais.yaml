@@ -330,6 +330,12 @@ spec:
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
               "valueDeserializerType": "STRING" 
+            },
+            {
+              "name": "obo.ytelser-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "STRING",
+              "valueDeserializerType": "STRING" 
             }
           ]
         }
