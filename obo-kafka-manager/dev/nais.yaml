@@ -284,6 +284,12 @@ spec:
               "valueDeserializerType": "AVRO"
             },
             {
+               "name": "teampam.samtykke-status-1",
+               "location": "AIVEN",
+               "keyDeserializerType": "STRING",
+               "valueDeserializerType": "AVRO"
+            },
+            {
               "name": "teamarenanais.aapen-arena-aogruppeaktivitetendret-v1-q1",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
