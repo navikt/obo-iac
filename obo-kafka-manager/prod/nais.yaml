@@ -6,7 +6,7 @@ metadata:
   labels:
     team: obo
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2026.09.29-10.35-f305bdb
+  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2026.10.16-08.53-818e6ab
   port: 8080
   ingresses:
     - https://obo-kafka-manager.intern.nav.no
