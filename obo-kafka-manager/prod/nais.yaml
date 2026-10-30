@@ -152,12 +152,6 @@ spec:
               "valueDeserializerType": "STRING"
             },
             {
-              "name": "teamarenanais.aapen-arena-tiltaksaktivitetendret-v1-q1",
-              "location": "AIVEN",
-              "keyDeserializerType": "STRING",
-              "valueDeserializerType": "STRING"
-            },
-            {
               "name": "teamarenanais.aapen-arena-utdanningsaktivitetendret-v1-q1",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
