@@ -6,7 +6,7 @@ metadata:
   labels:
     team: obo
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2026.11.18-09.49-1d11b6c
+  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:latest
   port: 8080
   ingresses:
     - https://obo-kafka-manager.intern.nav.no
@@ -329,6 +329,24 @@ spec:
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
               "valueDeserializerType": "STRING" 
+            },
+            {
+              "name": "paw.arbeidssokerperioder-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
+            },
+            {
+              "name": "paw.opplysninger-om-arbeidssoeker-v1",
+              "location":  "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
+            },
+            {
+              "name": "paw.arbeidssoker-profilering-v1",
+              "location":  "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
             }
           ]
         }
