@@ -6,7 +6,7 @@ metadata:
   labels:
     team: obo
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2026.11.18-09.49-1d11b6c
+  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:latest
   port: 8080
   ingresses:
     - https://obo-kafka-manager.intern.nav.no
@@ -115,10 +115,10 @@ spec:
               "valueDeserializerType": "STRING"
             },
             {
-             "name": "pto.oppfolging-startet-v1",
-             "location": "AIVEN",
-             "keyDeserializerType": "STRING",
-             "valueDeserializerType": "STRING"
+              "name": "pto.oppfolging-startet-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "STRING",
+              "valueDeserializerType": "STRING"
             },
             {
               "name": "pto.siste-14a-vedtak-v1",
@@ -277,10 +277,10 @@ spec:
               "valueDeserializerType": "AVRO"
             },
             {
-               "name": "teampam.samtykke-status-1",
-               "location": "AIVEN",
-               "keyDeserializerType": "STRING",
-               "valueDeserializerType": "AVRO"
+              "name": "teampam.samtykke-status-1",
+              "location": "AIVEN",
+              "keyDeserializerType": "STRING",
+              "valueDeserializerType": "AVRO"
             },
             {
               "name": "teamarenanais.aapen-arena-aogruppeaktivitetendret-v1-q1",
@@ -322,13 +322,31 @@ spec:
               "name": "pto.vedtak-14a-statusendring-v1",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
-              "valueDeserializerType": "STRING" 
+              "valueDeserializerType": "STRING"
             },
             {
               "name": "obo.ytelser-v1",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
-              "valueDeserializerType": "STRING" 
+              "valueDeserializerType": "STRING"
+            },
+            {
+              "name": "paw.arbeidssokerperioder-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
+            },
+            {
+              "name": "paw.opplysninger-om-arbeidssoeker-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
+            },
+            {
+              "name": "paw.arbeidssoker-profilering-v1",
+              "location": "AIVEN",
+              "keyDeserializerType": "AVRO",
+              "valueDeserializerType": "AVRO"
             }
           ]
         }
